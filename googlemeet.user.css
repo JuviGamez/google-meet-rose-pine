@@ -1,0 +1,261 @@
+/* ==UserStyle==
+@name           Google Meet - Rosé Pine Theme
+@namespace      github.com/JuviGamez
+@version        1.0.0
+@description    A soothing Rosé Pine theme for Google Meet
+@author         umkn1wn
+@match          https://meet.google.com/*
+==/UserStyle== */
+
+@-moz-document domain("meet.google.com") {
+    :root {
+        /* Rosé Pine Base Colors */
+        --rp-base: #191724;
+        --rp-surface: #1f1d2e;
+        --rp-overlay: #26233a;
+        --rp-muted: #6e6a86;
+        --rp-subtle: #908caa;
+        --rp-text: #e0def4;
+        --rp-love: #eb6f92;
+        --rp-gold: #f6c177;
+        --rp-rose: #ebbcba;
+        --rp-pine: #31748f;
+        --rp-foam: #9ccfd8;
+        --rp-iris: #c4a7e7;
+    }
+
+    /* Main background */
+    body,
+    .T4LgNb,
+    .crqnQb,
+    .hWX4r,
+    .DWzqYd {
+        background-color: var(--rp-base) !important;
+    }
+
+    /* Fix top bar and header completely */
+    .Tmb7Fd,
+    header,
+    .zWfAib,
+    .QTQg5e,
+    .xPRprf,
+    .ZiUxf,
+    .RWK2Je {
+        background-color: var(--rp-base) !important;
+    }
+
+    /* Fix Google Meet logo/text in header */
+    .r6xAKc {
+        color: var(--rp-text) !important;
+    }
+
+    /* Fix header divider */
+    .u6vdEc {
+        border-color: var(--rp-overlay) !important;
+    }
+
+    /* Secondary backgrounds */
+    .g3VIld,
+    .Y3Shkc,
+    .VfPpkd-Bz112c-LgbsSe,
+    .JPdR6b,
+    .VfPpkd-Bz112c-LgbsSe.VfPpkd-Bz112c-LgbsSe-OWXEXe-IT5dJd {
+        background-color: var(--rp-surface) !important;
+    }
+
+    /* Text colors */
+    .VfPpkd-Bz112c-LgbsSe,
+    .VfPpkd-Bz112c-LgbsSe.VfPpkd-Bz112c-LgbsSe-OWXEXe-IT5dJd,
+    .roSPhc,
+    .VfPpkd-StrnGf-rymPhb-L8ivfd-fmcmS {
+        color: var(--rp-text) !important;
+    }
+
+    /* New meeting button and other primary actions */
+    .VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.LQeN7.jEvJdc.QJgqC,
+    .VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-dgl2Hf {
+        background-color: var(--rp-iris) !important;
+        color: var(--rp-base) !important;
+    }
+
+    /* Hover state for new meeting button */
+    .VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.LQeN7.jEvJdc.QJgqC:hover,
+    .VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-dgl2Hf:hover {
+        background-color: var(--rp-love) !important;
+    }
+
+    /* Chat panel */
+    .WUFI9b {
+        background-color: var(--rp-surface) !important;
+        border-left: 1px solid var(--rp-overlay) !important;
+    }
+
+    /* Input fields */
+    input,
+    textarea {
+        background-color: var(--rp-overlay) !important;
+        color: var(--rp-text) !important;
+        border: 1px solid var(--rp-muted) !important;
+    }
+
+    /* Meeting controls bar */
+    .NCl2xe {
+        background-color: var(--rp-surface) !important;
+    }
+
+    /* Participant list */
+    .GvcuGe {
+        background-color: var(--rp-surface) !important;
+        color: var(--rp-text) !important;
+    }
+
+    /* Meeting info panel */
+    .g3VIld {
+        background-color: var(--rp-surface) !important;
+        color: var(--rp-text) !important;
+    }
+
+    /* Settings panels and dropdowns */
+    .VfPpkd-xl07Ob-XxIAqe,
+    .VfPpkd-xl07Ob-XxIAqe-OWXEXe-oYxtQd {
+        background-color: var(--rp-surface) !important;
+        border: 1px solid var(--rp-overlay) !important;
+    }
+
+    /* Additional text color fixes */
+    .VfPpkd-xl07Ob-XxIAqe *,
+    .VfPpkd-StrnGf-rymPhb-L8ivfd-fmcmS,
+    .VfPpkd-StrnGf-rymPhb-b9t22c,
+    .s7PhZd,
+    .RY3tic {
+        color: var(--rp-text) !important;
+    }
+
+    /* Scrollbars */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--rp-base);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--rp-muted);
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--rp-subtle);
+    }
+
+    /* Global text color fix */
+    * {
+        color: var(--rp-text) !important;
+    }
+
+    /* Additional specific text fixes */
+    .VfPpkd-StrnGf-rymPhb-L8ivfd-fmcmS,
+    .VfPpkd-StrnGf-rymPhb-fpDzbe-fmcmS,
+    .CkXZgc,
+    .TQGan,
+    .XCoPyb,
+    .KieQAe,
+    .VfPpkd-StrnGf-rymPhb,
+    .VfPpkd-StrnGf-rymPhb-ibnC6b-OWXEXe-gk6SMd,
+    .VfPpkd-StrnGf-rymPhb-ibnC6b,
+    .r6xAKc,
+    span,
+    div {
+        color: var(--rp-text) !important;
+    }
+
+    /* Preserve button text colors */
+    .VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-dgl2Hf {
+        color: var(--rp-base) !important;
+    }
+
+    /* Fix carousel and content backgrounds */
+    .DWzqYd,
+    .VfPpkd-cnG4Wd,
+    .VfPpkd-YVzG2b,
+    .VUw69,
+    .White,
+    .nsm7Bb-HzV7m-LgbsSe,
+    .VfPpkd-P5QLlc,
+    .zJKIV,
+    .RASpke,
+    .ncFHed,
+    .VfPpkd-AznF2e-ZMv3u,
+    .VfPpkd-AznF2e,
+    .VfPpkd-YPmvEd,
+    .VfPpkd-TD-EV8-LgbsSe,
+    .VfPpkd-P5QLlc,
+    .VfPpkd-YVzG2b {
+        background-color: var(--rp-surface) !important;
+    }
+
+    /* Fix carousel slide background */
+    .DWzqYd .VfPpkd-YVzG2b {
+        background-color: var(--rp-surface) !important;
+    }
+
+    /* Fix carousel container and its children */
+    .DWzqYd *,
+    .VfPpkd-cnG4Wd *,
+    .VfPpkd-YVzG2b * {
+        background-color: var(--rp-surface) !important;
+    }
+
+    /* Force background color on specific elements */
+    .VfPpkd-YVzG2b[style*="background-color"],
+    .VfPpkd-cnG4Wd[style*="background-color"],
+    [style*="background-color: rgb(255, 255, 255)"] {
+        background-color: var(--rp-surface) !important;
+    }
+
+    /* Fix carousel text */
+    .RASpke *,
+    .zJKIV * {
+        color: var(--rp-text) !important;
+    }
+
+    /* Target the carousel and its container more aggressively */
+    .VfPpkd-YVzG2b-OWXEXe-KE6vqe,
+    .VfPpkd-YVzG2b-OWXEXe-KE6vqe *,
+    .VfPpkd-AznF2e-OWXEXe-auswjd,
+    .VfPpkd-AznF2e-OWXEXe-auswjd *,
+    .VfPpkd-AznF2e-OWXEXe-auswjd[style],
+    .VfPpkd-YVzG2b-OWXEXe-KE6vqe[style],
+    .VfPpkd-AznF2e[style],
+    .VfPpkd-YVzG2b[style],
+    .VfPpkd-AznF2e,
+    .VfPpkd-AznF2e-ZMv3u,
+    .VfPpkd-AznF2e-ZMv3u[style],
+    .VfPpkd-P5QLlc,
+    .VfPpkd-P5QLlc[style],
+    .DWzqYd .VfPpkd-YVzG2b-OWXEXe-KE6vqe,
+    .DWzqYd .VfPpkd-AznF2e-OWXEXe-auswjd,
+    .DWzqYd .VfPpkd-YVzG2b[style],
+    .DWzqYd .VfPpkd-AznF2e[style] {
+        background-color: var(--rp-surface) !important;
+        background: var(--rp-surface) !important;
+    }
+
+    /* Target any element with inline background styles */
+    [style*="background"],
+    [style*="background-color"],
+    [style*="rgb(255, 255, 255)"],
+    [style*="#fff"],
+    [style*="#ffffff"] {
+        background-color: var(--rp-surface) !important;
+        background: var(--rp-surface) !important;
+    }
+
+    /* Target specific carousel slide containers */
+    .VfPpkd-AznF2e-ZMv3u[data-tab-id],
+    .VfPpkd-YVzG2b[data-tab-id] {
+        background-color: var(--rp-surface) !important;
+    }
+}
