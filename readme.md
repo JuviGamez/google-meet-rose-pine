@@ -11,10 +11,12 @@
     </a>
 </p>
 
+## 
+
 ## Usage
 
 1. Install [Stylus](https://github.com/openstyles/stylus)
-2. Download .css [file](oops)
+2. Download .css [file](https://github.com/JuviGamez/google-meet-rose-pine/raw/refs/heads/main/googlemeet.user.css)
 3. Enjoy!
 
 ## Thanks to
